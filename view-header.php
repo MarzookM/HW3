@@ -27,7 +27,7 @@
           <a class="nav-link" href="Product.php">Product</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="Stores-and-products.php">Stores and products</a>
+          <a class="nav-link" href="Employees.php">Employees</a>
         </li>  
       </ul>
     </div>
