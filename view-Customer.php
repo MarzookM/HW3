@@ -14,9 +14,9 @@ while($Customer = $Customer -> fetch_assoc())
   {
 ?>
 <tr> 
-  <td><?php echo $instructor['CustomerID']; ?></td>
-  <td><?php echo $instructor['CustomerName']; ?></td>  
-  <td><?php echo $instructor['CustomerAddress']; ?></td>
+  <td><?php echo $Customer['CustomerID']; ?></td>
+  <td><?php echo $Customer['CustomerName']; ?></td>  
+  <td><?php echo $Customer['CustomerAddress']; ?></td>
 </tr>
 <?php
     
