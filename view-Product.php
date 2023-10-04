@@ -19,8 +19,9 @@ while($Products = $Product ->fetch_assoc())
   <td><?php echo $Products['ProductName']; ?></td>  
   <td><?php echo $Products['ProductPrice']; ?></td>
   <td>
+ 
     <form method ="post" action="Store-with-Products.php">
-          <input type = "hidden" name ='cid' value="<?php echo $Products['ProductID']; ?>">
+         <a href = "Customers-with-products.php?ID=<?php echo $Products['ProductID']; ?>">
           <button type="submit" class="btn btn-primary">Products</button>
     </form>
   </td>
