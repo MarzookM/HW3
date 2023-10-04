@@ -20,7 +20,7 @@ while($Products = $Product ->fetch_assoc())
   <td><?php echo $Products['ProductPrice']; ?></td>
   <td>
     <form method ="post" action="Store-with-Products.php">
-      <input type = "hidden" name ="cid" value="<?php echo $Product['ProductID']; ?>">
+      <input type = "hidden" name ="cid" value="<?php echo $Products['ProductID']; ?>">
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </td>
