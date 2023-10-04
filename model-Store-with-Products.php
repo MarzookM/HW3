@@ -1,3 +1,4 @@
+error_reporting(0);
 <?php
 function selectStore($cid){
     try {
