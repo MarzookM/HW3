@@ -12,7 +12,7 @@
     </thead>
     <tbody>
 <?php                 //from control page
-while($Stores = $Store ->fetch_assoc())
+while($Stores = $Product ->fetch_assoc())
   {
 ?>
 <tr> 
