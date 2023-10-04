@@ -1,11 +1,11 @@
 <h1>Employee</h1>
 <div class ="card-group">
 <?php
-while($Employees = $Employee->fetch_assoc()) {
+while($Customers = $Customer->fetch_assoc()) {
   ?>
   <div class = "card">
     <div class="card-body">
-    <h5 class ="card-title"><?php echo $Employees['EmployeeName']; ?></h5>
+    <h5 class ="card-title"><?php echo Customers['CustomerName']; ?></h5>
     <p class ="card-text">
     <ul class="list-group">
   <?php
@@ -20,7 +20,7 @@ while($Employees = $Employee->fetch_assoc()) {
   ?>
     </ul>
     </p>
-      <p class="card-text"><small class="text-body-secondary">Office: <?php echo $Employees['EmployeeTitle']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Office: <?php echo $Customers['CustomerID']; ?></small></p>
       
     </div>
   </div>
