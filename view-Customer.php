@@ -17,7 +17,7 @@ while($Customers = $Customer ->fetch_assoc())
   <td><?php echo $Customers['CustomerID']; ?></td>
   <td><?php echo $Customers['CustomerName']; ?></td>  
   <td><?php echo $Customers['CustomerAddress']; ?></td>
-  <td><a href = "Customers-with-products.php?fd=<?php echo $Customers['CustomerID']; ?>">Customers</a></td>
+  <td><a href = "Customers-with-products.php?ID=<?php echo $Customers['CustomerID']; ?>">Customers</a></td>
 </tr>
 <?php
     
