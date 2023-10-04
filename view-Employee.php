@@ -21,6 +21,17 @@ while($Employees = $Employee ->fetch_assoc())
     
   }
 ?>
+<?php                 //from control page
+while($Customers = $Customer ->fetch_assoc())
+  {
+?>
+<tr> 
+  <td><?php echo $Customers['CustomerID']; ?></td>
+  <td><?php echo $Customers['CustomerName']; ?></td>  
+  <td><?php echo $Customers['CustomerAddress']; ?></td>
+  <td><a href = "Customers-with-products.php?ID=<?php echo $Customers['CustomerID']; ?>">Customers</a></td>
+</tr>
+<?php
       
     </tbody>
 
