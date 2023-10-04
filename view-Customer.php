@@ -10,13 +10,13 @@
     </thead>
     <tbody>
 <?php                 //from control page
-while($Customer = $Customers ->fetch_assoc())
+while($Customers = $Customer ->fetch_assoc())
   {
 ?>
 <tr> 
-  <td><?php echo $Customer['CustomerID']; ?></td>
-  <td><?php echo $Customer['CustomerName']; ?></td>  
-  <td><?php echo $Customer['CustomerAddress']; ?></td>
+  <td><?php echo $Customers['CustomerID']; ?></td>
+  <td><?php echo $Customers['CustomerName']; ?></td>  
+  <td><?php echo $Customers['CustomerAddress']; ?></td>
 </tr>
 <?php
     
