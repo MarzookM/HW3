@@ -1,9 +1,8 @@
 <?php
-function selectAccountsByOwner($uEmail) {
+function selectCustomer()() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare(""); //put code
-        $stmt->bind_param("s", $uEmail);
+        $stmt = $conn->prepare("SELECT CustomerID, CustomerName, CustomerAddress FROM 'Customer'"); //put code
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
