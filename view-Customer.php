@@ -10,7 +10,7 @@
     </thead>
     <tbody>
 <?php                 //from control page
-while($Customer = $Customer ->fetch_assoc())
+while($Customer = $Customers ->fetch_assoc())
   {
 ?>
 <tr> 
