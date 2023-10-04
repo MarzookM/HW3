@@ -21,7 +21,7 @@ while($Products = $Product ->fetch_assoc())
   <td>
  
     <form method ="post" action="Store-with-Products.php">
-         <a href = "Store-with-Products.php?cid=<?php echo $Products['ProductID']; ?>">
+         <input type="hidden" name="cid" value=<?php echo $Products['ProductID']; ?>">
           <button type="submit" class="btn btn-primary">Products</button>
     </form>
   </td>
