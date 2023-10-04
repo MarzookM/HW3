@@ -12,7 +12,7 @@ function selectCustomer(){
         throw $e;
     }
 }
-}
+
 
 function selectCustomerswithproducts($iid){
     try {
