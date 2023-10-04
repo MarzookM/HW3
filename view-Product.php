@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Price</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,12 @@ while($Products = $Product ->fetch_assoc())
   <td><?php echo $Products['ProductID']; ?></td>
   <td><?php echo $Products['ProductName']; ?></td>  
   <td><?php echo $Products['ProductPrice']; ?></td>
+  <td>
+    <form method ="post" action="Store-with-Products.php">
+      <input type = "hidden" name ="cid" value="<?php echo $Product['ProductID']; ?>">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </td>
 
 </tr>
 <?php
