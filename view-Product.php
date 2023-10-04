@@ -14,9 +14,9 @@ while($Products = $Product ->fetch_assoc())
   {
 ?>
 <tr> 
-  <td><?php echo $Customers['ProductID']; ?></td>
-  <td><?php echo $Customers['ProductName']; ?></td>  
-  <td><?php echo $Customers['ProductPrice']; ?></td>
+  <td><?php echo $Products['ProductID']; ?></td>
+  <td><?php echo $Products['ProductName']; ?></td>  
+  <td><?php echo $Products['ProductPrice']; ?></td>
 
 </tr>
 <?php
