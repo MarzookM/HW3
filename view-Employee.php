@@ -1,3 +1,5 @@
+
+
 <h1>Employee</h1>
 <div class = "table-responsive">
   <table class="table">
@@ -5,7 +7,7 @@
       <tr>
       <th>ID</th>
       <th>Name</th>
-      <th>Title</th>
+      <th>Address</th>
       </tr>
     </thead>
     <tbody>
@@ -17,12 +19,17 @@ while($Employees = $Employee ->fetch_assoc())
   <td><?php echo $Employees['EmployeeID']; ?></td>
   <td><?php echo $Employees['EmployeeName']; ?></td>  
   <td><?php echo $Employees['EmployeeTitle']; ?></td>
+</tr>
 <?php
     
   }
-
+?>
       
     </tbody>
+
+
+      
+    </thead>
 
 
       
