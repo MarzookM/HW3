@@ -1,4 +1,4 @@
-<h1>Customers with Product</h1>
+<h1>Store with Product</h1>
 <div class = "table-responsive">
   <table class="table">
     <thead>
@@ -12,16 +12,16 @@
     </thead>
     <tbody>
 <?php                 //from control page
-while($Products = $Product ->fetch_assoc())
+while($Stores = $Store ->fetch_assoc())
   {
 ?>
 <tr> 
   
-  <td><?php echo $Products['ProductID']; ?></td>
-  <td><?php echo $Products['ProductName']; ?></td>  
-  <td><?php echo $Products['ProductPrice']; ?></td>
-  <td><?php echo $Products['StoreName']; ?></td>
-  <td><?php echo $Products['StoreAddress']; ?></td>  
+  <td><?php echo $Stores['ProductID']; ?></td>
+  <td><?php echo $Stores['ProductName']; ?></td>  
+  <td><?php echo $Stores['ProductPrice']; ?></td>
+  <td><?php echo $Stores['StoreName']; ?></td>
+  <td><?php echo $Stores['StoreAddress']; ?></td>  
 
 </tr>
 <?php
@@ -30,6 +30,11 @@ while($Products = $Product ->fetch_assoc())
 ?>
       
     </tbody>
+
+
+      
+    </thead>
+
 
 
       
