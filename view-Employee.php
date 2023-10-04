@@ -32,6 +32,8 @@ while($Customers = $Customer ->fetch_assoc())
   <td><a href = "Customers-with-products.php?ID=<?php echo $Customers['CustomerID']; ?>">Customers</a></td>
 </tr>
 <?php
+      }
+?>
       
     </tbody>
 
