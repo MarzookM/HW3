@@ -9,7 +9,7 @@ while($Employees = $Employee->fetch_assoc()) {
     <p class ="card-text">
     <ul class="list-group">
   <?php
-    $Product = selectCustomerswithproducts($Employees[Employee_Name]);
+    $Product = selectCustomerswithproducts($Employees[EmployeeName]);
     while($Product = $Product->fetch_assoc()){
       ?>
         <td><?php echo $Products['ProductID']; ?></td>
