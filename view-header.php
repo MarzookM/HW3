@@ -29,6 +29,10 @@
            <li class="nav-item">
           <a class="nav-link" href="Employees.php">Employees</a>
         </li>  
+         </li>
+          <li class="nav-item">
+         <a class="nav-link" href="Store-With-Employees.php">Store With Employees</a>
+        </li>  
       </ul>
     </div>
   </div>
