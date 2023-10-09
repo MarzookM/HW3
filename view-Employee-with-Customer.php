@@ -10,20 +10,19 @@ while($Customers = $Customer ->fetch_assoc())
         <p class = "card-text">
         <ul class="list-group">
 <?php
-  $
+  $Products = selectCustomerswithproducts($Customer['CustomerID']);
+  while($Products = $Product->fetch_assoc()){
 ?>
+     <li class="list-group-items"><?php echo $Products['ProductName']; ?> - <?php echo $Products['ProductPrice']; - <?php echo $Products['ProductID']; ?> - </li>
+  <?php
+  }
+?>
+      </ul>
       </p>
-        <p class="card-text"><small class="text-body-secondary">Address: <?php echo $Customers['CustomerAddress']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Address: <?php echo $Customers['CustomerAddress']; ?></small></p>
       </div>
     </div>
-<tr> 
-  <td><?php echo $Customers['CustomerID']; ?></td>
-  <td><?php echo $Customers['CustomerName']; ?></td>  
-  <td><?php echo $Customers['CustomerAddress']; ?></td>
-  <td><a href = "Customers-with-products.php?ID=<?php echo $Customers['CustomerID']; ?>">Customers</a></td>
-</tr>
-<?php
-    
+    <?php
   }
 ?>
 </div>
