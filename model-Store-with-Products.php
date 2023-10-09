@@ -1,6 +1,6 @@
 
 <?php
-error_reporting(0);
+
 function selectStore($cid){
     try {
         $conn = get_db_connection();
