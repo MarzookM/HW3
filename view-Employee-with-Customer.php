@@ -14,7 +14,7 @@ while($Customers = $Customer ->fetch_assoc())
   while($Products = $Product->fetch_assoc()){
 ?>
   <li class="list-group-items"><?php echo $Products['ProductName']; ?> - <?php echo $Products['ProductPrice']; - <?php echo $Products['ProductID']; ?> - </li>
-  <?php
+ 
   }
 ?>
       </ul>
