@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-Store-With-Employees.php"); // going to create 
+require_once("modelEmployee-with-Customer.php"); // going to create 
 $pageTitle = "Employees in Store";
 include "view-header.php";
 $Customer = selectCustomer();
