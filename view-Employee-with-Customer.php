@@ -11,7 +11,7 @@ while($Customers = $Customer ->fetch_assoc())
         <ul class="list-group">
 <?php
   $Products = selectCustomerswithproducts($Customer['CustomerID']);
-  while($Products = $Product->fetch_assoc()){
+  while($Product = $Products->fetch_assoc()){
 ?>
     <li class="list-group-items"><?php echo $Products['ProductName']; ?> - <?php echo $Products['ProductPrice']; ?> - <?php echo $Products['ProductID']; ?> - </li>
   <td><?php echo $Products['ProductID']; ?></td>
