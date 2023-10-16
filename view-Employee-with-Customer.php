@@ -13,7 +13,7 @@ while($Customers = $Customer ->fetch_assoc())
   $Products = selectCustomerswithproducts($Customer['CustomerID']);
   while($Products = $Product->fetch_assoc()){
 ?>
-  <li class="list-group-items"><?php echo $Products['ProductName']; ?> - <?php echo $Products['ProductPrice']; - <?php echo $Products['ProductID']; ?> - </li>
+    <li class="list-group-items"><?php echo $Products['ProductName']; ?> - <?php echo $Products['ProductPrice']; ?> - <?php echo $Products['ProductID']; ?> - </li>
   <td><?php echo $Products['ProductID']; ?></td>
   <td><?php echo $Products['ProductName']; ?></td>  
   <td><?php echo $Products['ProductPrice']; ?></td>
