@@ -13,6 +13,14 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error.</div>"';
       }
       break;
+    case "Delete":
+     if(deleteProduct($_POST['cid'])){
+        echo '<div class="alert alert-success" role="alert">Course Deleted.</div>"';
+      }else{
+        echo '<div class="alert alert-danger" role="alert">Error.</div>"';
+      }
+    break;
+    
   }
 }
 
