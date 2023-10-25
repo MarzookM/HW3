@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-<h1>Product</h1>
+<h1>Customer</h1>
   </div>
   <div class="col-auto">
     <?php
