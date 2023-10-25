@@ -24,11 +24,7 @@ include "view-Employee-with-Customer-newform.php";
             <li class="list-group-item">
               <?php echo $Product['ProductName']; ?> - <?php echo $Product['ProductPrice']; ?> - <?php echo $Product['ProductID']; ?>
             </li>
-              <li>
-                               <?php
-include "view-Employee-with-Customer-editform.php"; 
-?>
-              </li>
+              
             <?php
             }
             ?>
