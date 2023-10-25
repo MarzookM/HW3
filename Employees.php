@@ -1,38 +1,38 @@
 <?php
 require_once("util-db.php");
-require_once("model-Employees.php");
-
+require_once("model-Employees.php"); // going to create 
 $pageTitle = "Employees";
-
 include "view-header.php";
-
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertEmployee($_POST['EmployeeName'], $_POST['EmployeeTitle'])) {
-        echo '<div class="alert alert-success" role="alert">Employee Added.</div>';
-      } else {
+      if(insertProduct($_POST['cNumber'], $_POST['cDesc'])){
+      if(insertEmployee($_POST['cNumber'], $_POST['cDesc'])){
+        echo '<div class="alert alert-success" role="alert">Product Added.</div>';
+      }else{
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
     case "Edit":
-      if (updateEmployee($_POST['EmployeeName'], $_POST['EmployeeTitle'])) {
-        echo '<div class="alert alert-success" role="alert">Employee edited.</div>';
-      } else {
+      if(updateProduct($_POST['cDesc'], $_POST['cid'])){
+      if(updateEmployee($_POST['cDesc'], $_POST['cid'])){
+        echo '<div class="alert alert-success" role="alert">Product edited.</div>';
+      }else{
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
     case "Delete":
-      if (deleteEmployee($_POST['EmployeeID'])) {
-        echo '<div class="alert alert-success" role="alert">Employee Deleted.</div>';
-      } else {
+     if(deleteProduct($_POST['cid'])){
+     if(deleteEmployee($_POST['cid'])){
+        echo '<div class="alert alert-success" role="alert">Course Deleted.</div>';
+      }else{
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
+    
   }
 }
-
 $Employee = selectEmployee();
-include "view-Employee.php";
+include "view-Employee.php"; //going to create
 include "view-footer.php";
-?>
+?> 
