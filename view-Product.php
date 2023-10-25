@@ -33,7 +33,7 @@ while($Products = $Product ->fetch_assoc())
   </td>
   <td>
     <form method ="post" action="Store-with-Products.php">
-         <input type="hidden" name="cid" value=<?php echo $Products['ProductID']; ?>">
+         <input type="hidden" name="jid" value=<?php echo $Products['ProductID']; ?>">
            <input type="hidden" name="actionType" value="Delete">
           
           <button type="submit" class="btn btn-primary">
