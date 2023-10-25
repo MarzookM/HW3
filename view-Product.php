@@ -6,9 +6,7 @@
     <?php
 include "view-Product-newform.php"; 
 ?>
- <?php
-include "view-Product-editform.php"; 
-?>
+
   </div>
 </div>
 <div class = "table-responsive">
