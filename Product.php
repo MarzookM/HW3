@@ -11,6 +11,8 @@ if(isset($_POST['actionType'])){
       break;
   }
 }
+
+
 $Product = selectProduct();
 include "view-Product.php"; //going to create
 include "view-footer.php";
