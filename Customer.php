@@ -15,7 +15,7 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Edit":
-      if(updateCustomer($_POST['cDesc'], $_POST['cNumber'])){
+      if(updateCustomer($_POST['cDesc'], $_POST['cNumber'],$_POST['cid'])){
         echo '<div class="alert alert-success" role="alert">Product edited.</div>';
       }else{
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
