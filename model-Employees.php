@@ -25,11 +25,11 @@ function insertEmployee($cNumber, $cDesc){
         throw $e;
     }
 }
-function updateEmployee($cNumber, $cDesc, $cid){
+function updateEmployee($cNumber, $cDesc){
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `Employee` set `EmployeeTitle` = ?, `EmployeeName` =? where `EmployeeID` = ?" ); 
-        $stmt->bind_param("ssi", $cNumber, $cDesc, $cid);
+        $stmt->bind_param("ssi", $cNumber, $cDesc);
         $success = $stmt->execute();
         $conn->close();
         return $success;
