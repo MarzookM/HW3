@@ -6,6 +6,9 @@
     <?php
 include "view-Product-newform.php"; 
 ?>
+ <?php
+include "view-Product-editform.php"; 
+?>
   </div>
 </div>
 <div class = "table-responsive">
@@ -32,11 +35,7 @@ while($Products = $Product ->fetch_assoc())
   <td>
   
   </td>
-  <td>
-       <?php
-include "view-Product-editform.php"; 
-?>
-  </td>
+  
   <td>
     <form method ="post" action="">
          <input type="hidden" name="cid" value="<?php echo $Products['ProductID']; ?>">
