@@ -33,7 +33,7 @@ while($Products = $Product ->fetch_assoc())
   </td>
   <td>
     <form method ="post" action="">
-         <input type="hidden" name="cid" value=<?php echo $Products['ProductID']; ?>">
+         <input type="hidden" name="cid" value="<?php echo $Products['ProductID']; ?>">
           <input type="hidden" name="actiontype" value="Delete">
           <button type="submit" class="btn btn-primary">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
