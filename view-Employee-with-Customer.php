@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>Employees and Customers</title>
+   <?php
+include "view-Employee-with-Customer-newform.php"; 
+?>
 </head>
 <body>
   <h1>Employees and Customers</h1>
