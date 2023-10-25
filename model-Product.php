@@ -42,7 +42,7 @@ function deleteProduct($jid){
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from course where ProductID =?"); 
-        $stmt->bind_param("i", $jid);
+        $stmt->bind_param("j", $jid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
