@@ -30,10 +30,12 @@ while($Products = $Product ->fetch_assoc())
   <td><?php echo $Products['ProductName']; ?></td>  
   <td><?php echo $Products['ProductPrice']; ?></td>
   <td>
-          <?php
+  
+  </td>
+  <td>
+       <?php
 include "view-Product-editform.php"; 
 ?>
-  
   </td>
   <td>
     <form method ="post" action="">
