@@ -55,4 +55,4 @@ $Store = selectStore();
 include "view-Store.php"; //going to create
 include "view-footer.php";
 ?> 
-?>
+
