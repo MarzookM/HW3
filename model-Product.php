@@ -41,7 +41,7 @@ function updateProduct($cNumber, $cDesc, $cid){
 function deleteProduct($cid){
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from course where ProductID =?"); 
+        $stmt = $conn->prepare("delete from Product where ProductID =?"); 
         $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
