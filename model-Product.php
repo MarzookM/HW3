@@ -38,11 +38,11 @@ function updateProduct($cNumber, $cDesc, $cid){
         throw $e;
     }
 }
-function deleteProduct($jid){
+function deleteProduct($cid){
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from course where ProductID =?"); 
-        $stmt->bind_param("j", $jid);
+        $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
