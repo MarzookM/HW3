@@ -32,6 +32,10 @@
          </li>
           <li class="nav-item">
          <a class="nav-link" href="Employee-with-Customer.php">Employee with Customer</a>
+        </li>
+         </li>
+          <li class="nav-item">
+         <a class="nav-link" href="Store.php">Store</a>
         </li>  
       </ul>
     </div>
