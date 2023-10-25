@@ -16,7 +16,7 @@
       <div class="modal-body">
        <form method="post" action="">
           <div class="mb-3">
-            <label for="cNumber<?php echo $Customers['CustomerID'];?>" class="form-label">Customer Title</label>
+            <label for="cNumber<?php echo $Customers['CustomerID'];?>" class="form-label">Customer Address</label>
             <input type="text" class="form-control" id="cNumber<?php echo $Customers['CustomerID'];?>" name="cNumber" value ="<?php echo $Customers['CustomerAddress'];?>">
           
           </div>
