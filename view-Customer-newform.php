@@ -20,12 +20,12 @@
       <div class="modal-footer">
        <form method="post" action="">
           <div class="mb-3">
-            <label for="cNumber" class="form-label">Customer Name</label>
+            <label for="cNumber" class="form-label">Customer Address</label>
             <input type="text" class="form-control" id="cNumber" name="cNumber">
           
           </div>
          <div class="mb-3">
-            <label for="cDesc" class="form-label">Customer Address</label>
+            <label for="cDesc" class="form-label">Customer Name</label>
             <input type="text" class="form-control" id="cDesc" name="cDesc">
           
           </div>
