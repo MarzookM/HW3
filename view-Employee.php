@@ -53,7 +53,7 @@ include "view-Employee-editform.php";
   <td>
     <form method ="post" action="Store-with-Employees.php">
          <input type="hidden" name="cid" value=<?php echo $Employees['EmployeeID']; ?>">
-          <button type="submit" class="btn btn-primary">Employees</button>
+          <button type="submit" class="btn btn-primary">Done</button>
     </form>
   </td>
 
