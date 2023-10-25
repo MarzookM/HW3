@@ -18,7 +18,7 @@
        <form method="post" action="">
           <div class="mb-3">
             <label for="cNumber<?php echo $Employees['EmployeeID'];?>" class="form-label">Employee Price</label>
-            <input type="text" class="form-control" id="cNumber<?php echo $Employees['EmployeeID'];?>" name="cNumber" value ="<?php echo $Employees['EmployeePrice'];?>">
+            <input type="text" class="form-control" id="cNumber<?php echo $Employees['EmployeeID'];?>" name="cNumber" value ="<?php echo $Employees['EmployeeTitle'];?>">
           
           </div>
          <div class="mb-3">
