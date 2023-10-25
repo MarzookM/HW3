@@ -9,6 +9,9 @@ include "view-Employee-with-Customer-newform.php";
 <body>
   <h1>Employees and Customers</h1>
   <div class="card-group">
+     <?php
+include "view-Employee-with-Customer-editform.php"; 
+?>
     <?php             
     while ($Customers = $Customer->fetch_assoc()) {
     ?>
