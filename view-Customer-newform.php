@@ -26,6 +26,10 @@
           </div>
          <div class="mb-3">
             <label for="cDesc" class="form-label">Customer Name</label>
+              <?php 
+                        $CustomerList = selectCustomerForInput();
+                        include "view-Customer-input-list.php"; 
+                        ?>
             <input type="text" class="form-control" id="cDesc" name="cDesc">
           
           </div>
