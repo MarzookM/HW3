@@ -8,16 +8,16 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
       if(insertProduct($_POST['cNumber'], $_POST['cDesc'])){
-        echo '<div class="alert alert-success" role="alert">Product Added.</div>"';
+        echo '<div class="alert alert-success" role="alert">Product Added.</div>';
       }else{
-        echo '<div class="alert alert-danger" role="alert">Error.</div>"';
+        echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
     case "Delete":
      if(deleteProduct($_POST['cid'])){
-        echo '<div class="alert alert-success" role="alert">Course Deleted.</div>"';
+        echo '<div class="alert alert-success" role="alert">Course Deleted.</div>';
       }else{
-        echo '<div class="alert alert-danger" role="alert">Error.</div>"';
+        echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
     break;
     
