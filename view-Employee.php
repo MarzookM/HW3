@@ -31,7 +31,7 @@ while($Employees = $Employee ->fetch_assoc())
 <tr> 
   <td><?php echo $Employees['EmployeeID']; ?></td>
   <td><?php echo $Employees['EmployeeName']; ?></td>  
-  <td><?php echo $Employees['EmployeePrice']; ?></td>
+  <td><?php echo $Employees['EmployeeTitle']; ?></td>
   <td>
 <?php
 include "view-Employee-editform.php"; 
