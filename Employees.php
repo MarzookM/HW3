@@ -9,21 +9,21 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertEmployee($_POST['employeeName'], $_POST['employeeDescription'])) {
+      if (insertEmployee($_POST['EmployeeName'], $_POST['EmployeeTitle'])) {
         echo '<div class="alert alert-success" role="alert">Employee Added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
     case "Edit":
-      if (updateEmployee($_POST['employeeDescription'], $_POST['employeeId'])) {
+      if (updateEmployee($_POST['EmployeeTitle'], $_POST['EmployeeID'])) {
         echo '<div class="alert alert-success" role="alert">Employee edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
       }
       break;
     case "Delete":
-      if (deleteEmployee($_POST['employeeId'])) {
+      if (deleteEmployee($_POST['EmployeeID'])) {
         echo '<div class="alert alert-success" role="alert">Employee Deleted.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -32,7 +32,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$Employees = selectEmployee();
-include "view-Employees.php";
+$Employee = selectEmployee();
+include "view-Employee.php";
 include "view-footer.php";
 ?>
