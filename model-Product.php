@@ -46,8 +46,7 @@ function deleteProduct($cid){
         $success = $stmt->execute();
         $conn->close();
         return $success;
-         } 
-    catch (Exception $e) {
+    } catch (Exception $e) {
         $conn->close();
         throw $e;
     }
