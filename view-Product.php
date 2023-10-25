@@ -4,7 +4,8 @@
   </div>
   <div class="col-auto">
     <?php
-include "view-Product-newform-php";\?>
+include "view-Product-newform-php"; 
+?>
   </div>
 </div>
 <div class = "table-responsive">
