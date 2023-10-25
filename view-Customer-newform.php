@@ -30,7 +30,6 @@
                         $CustomerList = selectCustomerForInput();
                         include "view-Customer-input-list.php"; 
                         ?>
-            <input type="text" class="form-control" id="cDesc" name="cDesc">
           
           </div>
            <input type="hidden" name="actionType" value="Add">
