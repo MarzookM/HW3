@@ -32,7 +32,7 @@ while($Products = $Product ->fetch_assoc())
   <td><?php echo $Products['ProductPrice']; ?></td>
   <td>
 <?php
-include "view-Product-editform.php"; 
+include "view-Product-newform.php"; 
 ?>
   </td>
   
