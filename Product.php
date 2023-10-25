@@ -12,7 +12,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$Products = selectProduct();
+$Product = selectProduct();
 include "view-Product.php";
 include "view-footer.php";
 ?>
