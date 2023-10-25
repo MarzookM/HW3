@@ -12,7 +12,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="newProductModalLabel">New Product</h1>
+        <h1 class="modal-title fs-5" id="newProductModalLabel">New Employee</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -21,12 +21,12 @@
       <div class="modal-footer">
        <form method="post" action="">
           <div class="mb-3">
-            <label for="cNumber" class="form-label">Product Price</label>
+            <label for="cNumber" class="form-label">Employee Title</label>
             <input type="text" class="form-control" id="cNumber" name="cNumber">
           
           </div>
          <div class="mb-3">
-            <label for="cDesc" class="form-label">Product Name</label>
+            <label for="cDesc" class="form-label">Employee Name</label>
             <input type="text" class="form-control" id="cDesc" name="cDesc">
           
           </div>
