@@ -1,4 +1,4 @@
-<select class="form-select" id="iid" name="iid">
+<select class="form-select" id="cNumber" name="cNumber">
     <?php while ($CustomerItem = $CustomerList->fetch_assoc()) {
         $selText = "";
         if ($selectedCustomer == $CustomerItem['CustomerID']) {
