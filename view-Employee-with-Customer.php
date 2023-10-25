@@ -7,23 +7,23 @@
     </div>
 </div>
 <div class="card-group">
-    <?php while ($Customers = $Customer->fetch_assoc()) { ?>
+    <?php while ($customer = $Customer->fetch_assoc()) { ?>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"><?php echo $Customers['CustomerID']; ?></h5>
+                <h5 class="card-title"><?php echo $customer['CustomerID']; ?></h5>
                 <p class="card-text">
                     <ul class="list-group">
                         <?php
-                        $Customers = selectCustomerwithproducts($Customers['CustomerID']);
-                        while ($Product = $Products->fetch_assoc()) {
+                        $products = selectCustomerwithproducts($customer['CustomerID']);
+                        while ($product = $products->fetch_assoc()) {
                             ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <span><?php echo $Customers['CustomerName']; ?> - <?php echo $Customers['ProductName']; ?> - <?php echo $Customers['CustomerID']; ?> - <?php echo $Customers['ProductID']; ?></span>
+                                <span><?php echo $customer['CustomerName']; ?> - <?php echo $product['ProductName']; ?> - <?php echo $customer['CustomerID']; ?> - <?php echo $product['ProductID']; ?></span>
                                 <div class="btn-group" role="group">
                                     <?php include "view-Employee-with-Customer-editform.php"; ?>
                                     <div class="btn-group" role="group">
                                         <form method="post" action="">
-                                            <input type="hidden" name="tid" value="<?php echo $Customers['ProductID']; ?>" />
+                                            <input type="hidden" name="tid" value="<?php echo $product['ProductID']; ?>" />
                                             <input type="hidden" name="actionType" value="Delete">
                                             <button type="submit" class="btn btn-primary" onClick="return confirm('Are you sure ?')">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -38,7 +38,7 @@
                         <?php } ?>
                     </ul>
                 </p>
-                <p class="card-text"><small class="text-body-secondary">Specialist: <?php echo $Customers['CustomerAddress']; ?></small></p>
+                <p class="card-text"><small class="text-body-secondary">Specialist: <?php echo $customer['CustomerAddress']; ?></small></p>
             </div>
         </div>
     <?php } ?>
