@@ -15,7 +15,7 @@ include "view-Product-newform.php";
       <tr>
       <th>ID</th>
       <th>Name</th>
-      <th>Price</th>
+      <th>Address</th>
         <th></th>
         <th></th>
         <th></th>
