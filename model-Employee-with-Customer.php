@@ -28,6 +28,34 @@ function selectCustomerswithproducts($iid){
     }
 }
 
+function selectCustomerForInput(){
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT `CustomerID`, `CustomerName` FROM `Customer` order by CustomerName"); 
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectProductForInput(){
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT `ProductID`, `ProductName` FROM `Product` order by ProductName"); 
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 
 function insertStore($iid, $cid, $Cname, $Pname, $PPrice) {
     try {
