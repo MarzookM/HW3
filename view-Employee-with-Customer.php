@@ -9,9 +9,6 @@ include "view-Employee-with-Customer-newform.php";
 <body>
   <h1>Employees and Customers</h1>
   <div class="card-group">
-     <?php
-include "view-Employee-with-Customer-editform.php"; 
-?>
     <?php             
     while ($Customers = $Customer->fetch_assoc()) {
     ?>
@@ -26,6 +23,9 @@ include "view-Employee-with-Customer-editform.php";
             ?>
             <li class="list-group-item">
               <?php echo $Product['ProductName']; ?> - <?php echo $Product['ProductPrice']; ?> - <?php echo $Product['ProductID']; ?>
+               <?php
+include "view-Employee-with-Customer-editform.php"; 
+?>
             </li>
             <?php
             }
