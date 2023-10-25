@@ -12,19 +12,7 @@ function selectCustomer(){
         throw $e;
     }
 }
-function selectCustomerForInput(){
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT `CustomerID`, `CustomerName` FROM `Customer` order by CustomerName"); 
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $conn->close();
-        return $result;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
+
 function insertCustomer($cNumber, $cDesc){
     try {
         $conn = get_db_connection();
